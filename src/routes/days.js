@@ -7,8 +7,8 @@ module.exports = () => {
       // read the data from the json file
       read(path.resolve(__dirname, `../db/schema/days.json`)).then((days)=>{
         console.log(`days`)
-        // send response back as json
-        response.json(days);
+        // send response back
+        response.send(days);
       })
   });
 
