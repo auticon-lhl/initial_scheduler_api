@@ -7,7 +7,10 @@ const bodyparser = require("body-parser");
 // Define your application as one that uses the express middleware
 const app = express();
 
-const test = require("./routes/test");
+// import test.js file from the routes folder by uncommenting the line below
+// const test = require("./routes/test");
+
+
 // import the days route file below in the same way the test route file was imported above
 
 
@@ -19,7 +22,8 @@ module.exports = function application() {
   app.use(bodyparser.json());
 
   // tell your app to use the test route file when someone requests a resource from '/api'
-  app.use("/api", test());
+  // uncomment the line below
+  // app.use("/api", test());
 
   // tell your app to use the rest of the route file you defined
  

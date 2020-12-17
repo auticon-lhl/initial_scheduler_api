@@ -11,7 +11,7 @@ module.exports = () => {
   });
 
   router.put("/appointments/:id", (request, response) => {
-    // place code to get 1 appointment by id below
+    // place code to edit an appointment below
 
   });
 

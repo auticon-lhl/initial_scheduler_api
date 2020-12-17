@@ -2,7 +2,31 @@
 
 ## Setup
 
-Install dependencies with `npm install`.
+:point_right:&nbsp;&nbsp; Run the following command
+```
+ run npm init
+```
+
+This app relies on the following dependencies
+
+- express
+- body-parser
+- fs
+
+:point_right:&nbsp;&nbsp; Run the following command to install both at the same time
+```
+    npm i express body-parser fs
+```
+
+:point_right:&nbsp;&nbsp; Add the following start script in your package.json file.
+
+```JSON
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+```
+
+You can re-install dependencies with `npm install`. No need to run this step since you installed dependencies seperately above.
 
 ## DB
 
