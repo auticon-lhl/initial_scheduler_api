@@ -8,7 +8,7 @@ const bodyparser = require("body-parser");
 const app = express();
 
 // import test.js file from the routes folder by uncommenting the line below
-// const test = require("./routes/test");
+const test = require("./routes/test");
 
 
 // import the days route file below in the same way the test route file was imported above
@@ -23,7 +23,7 @@ module.exports = function application() {
 
   // tell your app to use the test route file when someone requests a resource from '/api'
   // uncomment the line below
-  // app.use("/api", test());
+  app.use("/api", test());
 
   // tell your app to use the rest of the route file you defined
  
